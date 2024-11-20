@@ -2,148 +2,171 @@
 <html lang="en">
 <head>
     <meta name="msvalidate.01" content="5267473F102012E959B297C3B0196D41" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Watch live sports streams for free on SportsSurge. High-quality, HD streaming of NFL, NBA, MLB, NHL, and Soccer.">
-    <meta name="keywords" content="Sports streaming, NFL live, NBA free streams, soccer streams, live sports, MLB, NHL">
-    <meta name="robots" content="index, follow">
-    <title>SportsSurge - Watch Live Sports NFL, NBA, NHL, MMA, BOXING</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <meta charset="utf-8">
+    <title>  StreamEast - Stream Live Sports NFL, NBA, MLB, NHL and Soccer  </title>
+    <meta content="Sportsurge lets you watch live sports streams for free without registration. Enjoy HD quality for all your favorite sports events with no hassle. Watch now!" name="description">
+    <meta content="Sportsurge, free sports streaming, live NFL streams, NBA streams USA, UFC streams free, sports streaming platform, live sports USA" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="index, follow" name="robots">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link alt="Sportsurge" height="66" href="images/watch-live-soccer-streams-logo.png" rel="shortcut icon" type="image/x-icon">
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
             background-color: #000;
             color: #fff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
         }
         .header {
             text-align: center;
-            padding: 20px 0;
+            margin-bottom: 30px;
         }
         .header img {
-            width: 180px;
+            width: 200px;
             height: auto;
         }
-        .content {
-            padding: 20px;
-            text-align: center;
+        h1 {
+            font-size: 2.5em;
+            margin: 15px 0;
         }
-        .main-content {
+        .main {
             background-color: #1a1a1a;
             padding: 30px;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 800px;
+            border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
         }
-        .main-content h1 {
-            font-size: 2.2em;
-            color: turquoise;
-        }
-        .match-list ul {
-            list-style: none;
+        .m-list {
+            list-style-type: none;
             padding: 0;
         }
-        .match-list li {
-            background-color: #333;
-            padding: 15px;
+        .m-list li {
             margin: 10px 0;
+            padding: 15px;
+            background-color: #333;
             border-radius: 8px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        .match-list li:hover {
+        .m-list li:hover {
             background-color: #444;
         }
-        .match-list a {
+        .m-list a {
+            color: inherit;
             text-decoration: none;
-            color: #fff;
-            font-weight: 500;
+            display: block;
+            height: 100%;
+            flex: 1;
         }
-        .match-list span {
-            color: red;
-            font-weight: bold;
+        .faq h2, .faq h3 {
+            color: #00cc66;
         }
-        .faq-section {
+        .faq h2 {
             margin-top: 30px;
-            text-align: left;
         }
-        .faq-section h2 {
-            color: turquoise;
-        }
-        .faq-section p {
+        .faq p {
             line-height: 1.6;
+            margin: 15px 0;
         }
-        footer {
-            background-color: #111;
-            color: #888;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .article-box {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+            margin-bottom: 30px;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logo-space {
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-            font-size: 0.9em;
+            margin: 30px 0;
         }
-        footer a {
-            color: turquoise;
-            text-decoration: none;
+        .logo-space img {
+            width: 100%;
+            height: auto;
         }
-        /* CSS to hide .post-icons class */
+
+        /* Hide elements with the class 'post-icons' */
         .post-icons {
             display: none;
+        }
+
+        .banner-text {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #00cc66; /* Green text color */
+            text-align: center;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="https://reddit.bestreamsports.lol/" target="_blank">
-            <img src="https://v2-sportsurge.pages.dev/images/logo.png" alt="SportsSurge Logo">
-        </a>
+        <center>
+            <!-- Logo with link -->
+            <a id="logo-link" href="https://reddit.bestreamsports.lol/" target="_blank">
+                <img src="https://v1-v3-sportsurge.pages.dev/images/logo.png" alt="SportSurge Logo">
+            </a>
+        </center>
     </div>
     <div class="content">
-        <div class="main-content">
-            <h1>Stream Live Sports: NFL, NBA, MLB, NHL, BOXING, MMA</h1>
-            <p> Please press Ctrl + D to bookmark this site to keep updated about StreamEast-official domains.</p>
-            <div class="match-list">
-                <ul>
-                    <li>
-                        <a href="https://reddit.bestreamsports.lol/">SPORTSURGE HOME</a>
-                        <span style="color: turquoise;">● LIVE</span>
-                    </li>
-                    <li>
-                        <a href="https://reddit.bestreamsports.lol/">NBA Live Stream</a>
-                        <span style="color: turquoise;">● LIVE</span>
-                    </li>
-                    <li>
-                        <a href="https://reddit.bestreamsports.lol/">Boxing Live HD</a>
-                        <span style="color: turquoise;">● LIVE</span>
-                    </li>
-                    <li>
-                        <a href="https://reddit.bestreamsports.lol/">NCAAB Live Stream</a>
-                        <span style="color: turquoise;">● LIVE</span>
-                    </li>
-                </ul>
-              
-              <div>
-  <div class="text-sm text-turquoise mt-8">
-    <span style="color: turquoise;">SportsSurge</span> offers live streams of your favorite 
-      <span style="color: turquoise;">sports events</span> without requiring any 
-    <span style="color: turquoise;">sign-ups</span><strong> or subscriptions</strong>. 
-   <span style="color: turquoise;"> Enjoy seamless,</span><strong>HD-quality streams</strong> of 
-     <span style="color: turquoise;">football,</span> <strong>basketball</strong>, 
-  <span style="color: turquoise;">MMA,</span>  MMA, and more—all 
-   <span style="color: turquoise;">completely free</span> and accessible anytime!
-  </div>
-</div>
 
-              <div class="logo-space">
+        <!-- New Text Banner Above the Box -->
+        <div class="banner-text">
+      </div>
+
+        <div class="main">
+                <h1><span style="color: turquoise;">Stream Live Sports: NFL, NBA, MLB, NHL, MMA, BOXING AND MORE</span></h1>
+
+            <span>Please press Ctrl + D to bookmark this site to keep updated about StreamEast-official domains.</span>
+
+            <ul class="m-list">
+                <li class="bntl">
+                    <a href="https://reddit.bestreamsports.lol/">STREAMEAST HOME</a>
+                    <span>● LIVE</span>
+                </li>
+                <li class="bntl">
+                    <a href="https://reddit.bestreamsports.lol/p/nbastreams.html">NBA LIVE HD Football</a>
+                    <span>● LIVE</span>
+                </li>
+                <li class="bntl">
+                    <a href="https://reddit.bestreamsports.lol/p/boxingstreams.html">BOXING LIVE HD</a>
+                    <span>● LIVE</span>
+                </li>
+                <li class="bntl">
+                    <a href="https://reddit.bestreamsports.lol/p/boxingstreams.html">NCAAB LIVE HD</a>
+                    <span>● LIVE</span>
+                </li>
+                <li class="bntl">
+                    <a href="https://reddit.bestreamsports.lol/p/boxingstreams.html">CFB LIVE HD</a>
+                    <span>● LIVE</span>
+                </li>
+            </ul>
+             <section>
+        <h2></h2>
+        <p>StreamEast provides live streams of your favorite sports events without the need for sign-ups or subscriptions. Enjoy smooth, HD-quality streams of football, basketball, MMA, and more—all completely free!</p>
+            <div class="logo-space">
                 <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqOb2HRuKIqmRvzacwF3LAczykY9vJc8UXrYwe3wWig2ww20mQV8BHg4B1NaD0u0AKUrek5WPtrD4DKebSu_Q2V6d45eenNdgpQv6QSuM0g0nLJv0_msQZTbEPul63rchhQAiHM72QRzZ07ZxRIKtcXh2RJLktwjNL6utxlKA5sNddZIyYvlMHiLAGnSl0/s1600/download%20(4).png">
-                    <img border="0" height="400" width="700" src="https://official-v3--streameast.pages.dev/images/watch-live-nfl-streams.jpg" alt="Logo">
+                    <img border="0" height="100" width="200" src="https://official-v3--streameast.pages.dev/images/watch-live-nfl-streams.jpg" alt="Logo">
                 </a>
-            </div>
+            <div>
                 <h1><span style="color: turquoise;">Why SportsSurge is Your Ultimate Destination for Live Sports</span></h1>
 
     <p>
@@ -265,4 +288,5 @@
     </p>
             </div>
         </div>
-       
+
+     
